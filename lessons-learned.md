@@ -13,3 +13,9 @@ Outputs can be found on /lessons-learned/Chip name & Driver.png
 
 The following command "sudo dmesg | grep -iE "wlp|wlan|firmware|rtl|brcm|ath" checks for errors from the last session.
 Outputs can be found on /lessons-learned/Last Session Errors.png
+
+LESSON 2 
+
+I had to setup a DHCP reservation for the machine so that the IP adress of the machine doesnt change on the next boot.
+I use my phone to provide my devices with internet connection so there was no way I could could do this as there was no router dashboard.
+So the solution to this was using the hostname instead of an IP adress.
