@@ -93,8 +93,6 @@ journalctl -u cron -n 20
 | Rotation under cron | No more than 7 archives after many runs | [pass/fail] |
 | Survives a reboot | Jobs resume after restarting the laptop | [pass/fail] |
 
-Screenshots: `../05-testing/cron-*.png`
-
 ## Troubleshooting
 
 | Symptom | Likely cause |
