@@ -20,3 +20,11 @@ then I ran "hostnamectl" to see the hostname for the server machine.
 So now if i want to log into the server I can run "ssh yourusername@lab-server.local" 
 If the IP address changes i can still use the this command to login to the server.
 
+I ran "notepad $env:USERPROFILE\.ssh\config" to create a config file.
+This opened notepad then wrote: 
+Host lab
+    HostName [IP]
+    User [username]
+(**If IP address changes then open config and update IP.**)
+It saved config as a .txt file so i ran "cd $env:USERPROFILE\.ssh" & "ren config.txt config" to rename the file so that it works.
+Now that everything works, I just ran "ssh lab" and it logged me into the server.
