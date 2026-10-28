@@ -16,6 +16,8 @@ Outputs can be found on /lessons-learned/Last Session Errors.png
 
 LESSON 2 
 
-I had to setup a DHCP reservation for the machine so that the IP adress of the machine doesnt change on the next boot.
-I use my phone to provide my devices with internet connection so there was no way I could could do this as there was no router dashboard.
-So the solution to this was using the hostname instead of an IP adress.
+No router available, so I used an Android hotspot. Constraints were a dynamic IP and possible client isolation. I solved it with mDNS (avahi) and set the hotspot to 2.4 GHz.
+
+LESSON 3
+
+the error message, the cause (entered a folder path instead of accepting the default file name), and the fix. It’s a small one, but it shows the kind of mistake that quietly breaks key authentication, and why checking each step’s output matters.
